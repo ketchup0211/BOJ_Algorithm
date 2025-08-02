@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-int A, B;
+long long A, B;
 
 int main()
 {
@@ -15,10 +15,10 @@ int main()
     cout << 0;
     return 0;
   }
-  
+
   cout << abs(A-B)-1 << '\n';
   
-  for(int i = A < B ? A+1 : B+1 ; i < (A>B ? A : B);i++){
+  for(long long i = A < B ? A+1 : B+1 ; i < (A>B ? A : B);i++){
     cout << i << ' ';
   }
   return 0;
